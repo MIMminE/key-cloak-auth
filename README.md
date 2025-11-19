@@ -20,8 +20,7 @@ docker compose up -d
 - Client: `my-client` (Client type: openid-connect), Redirect URI: `http://localhost:3000/callback`
 - Client에서 `client secret`을 발급받아 `.env`에 설정하거나 public client로 PKCE 사용
 
-
-**작업 진행 프로세스 기록** 
-- Keycloak 설정 및 도커 컴포즈 파일 작성 및 실행
-- Node.js 샘플 앱 개발 시작
-- keycloak realm resource export json 작성 -> 키클록 콘솔 브라우저를 통해 사용 가능
+추가 패키지 설명
+- simple-oauth2-server: OAuth2 기본 동작(Authorization Code 교환, 토큰 엔드포인트 동작 등)을 간단히 테스트하기 위해 만든 샘플 서버입니다.
+- sso-oauth2-server-1: Keycloak과 연동해 SSO(싱글 사인온) 동작을 확인하기 위한 Express 샘플 앱(포트 예: 3001). Authorization Code + PKCE 흐름을 시연합니다.
+- sso-oauth2-server-2: SSO 동작을 추가로 테스트하거나 멀티 앱 시나리오를 검증하기 위한 보조 샘플 앱(포트 예: 3002). 

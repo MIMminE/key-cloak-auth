@@ -1,15 +1,15 @@
 # sso-oauth2-server-1
 
-SSO test server 1. Simple Express app demonstrating Authorization Code + PKCE against Keycloak.
+SSO 테스트 서버 1. Keycloak을 대상으로 Authorization Code + PKCE 흐름을 시연하는 간단한 Express 앱입니다.
 
-Usage
+사용법
 
 ```powershell
 cd sso-oauth2-server-1
 npm install
 cp .env.example .env
-# edit .env to match your Keycloak (client id, base url)
+# .env에서 Keycloak 설정(CLIENT_ID, KEYCLOAK_BASE_URL, REALM 등)을 실제 값으로 수정하세요
 npm start
 ```
 
-Open http://localhost:3001 and click Log in with Keycloak. If you already have a Keycloak session from another app, Keycloak will usually skip login and return immediately (SSO behavior).
+브라우저에서 http://localhost:3001 를 열고 "Log in with Keycloak" 버튼을 클릭하세요. 이미 다른 애플리케이션으로 Keycloak 세션이 있는 경우(SSO) 로그인 과정이 생략되고 바로 리다이렉트될 수 있습니다.
