@@ -20,10 +20,6 @@ docker compose up -d
 - Client: `my-client` (Client type: openid-connect), Redirect URI: `http://localhost:3000/callback`
 - Client에서 `client secret`을 발급받아 `.env`에 설정하거나 public client로 PKCE 사용
 
-샘플 앱
-- `server` 폴더에 간단한 Express 앱이 있습니다. (아직 생성되지 않음)
-
-
 
 **작업 진행 프로세스 기록** 
 - Keycloak 설정 및 도커 컴포즈 파일 작성 및 실행
