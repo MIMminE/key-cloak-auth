@@ -1,0 +1,18 @@
+{
+  "name": "keycloak-sample-server",
+  "version": "1.0.0",
+  "description": "Minimal Express app demonstrating Authorization Code (PKCE) flow with Keycloak",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "pkce-challenge": "^2.0.2",
+    "dotenv": "^16.0.3",
+    "querystring": "^0.2.1"
+  }
+}
+
